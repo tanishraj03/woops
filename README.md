@@ -1,4 +1,4 @@
-# woops
+# woops!
 
 Catches messages headed to the wrong chat on WhatsApp Web, and polishes any message you're about to send.
 
