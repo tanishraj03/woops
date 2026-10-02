@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>woops playground</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="playground.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <span class="wordmark" aria-label="woops">w<img src="assets/mark.svg" alt="">ops</span>
+        <button class="theme" id="theme" aria-pressed="false">Light chat</button>
+      </div>
+      <p class="side-lede">A pretend chat app for trying woops. Nothing here gets sent anywhere.</p>
+
+      <ul class="chats" id="chats" aria-label="Chats"></ul>
+
+      <div class="tries">
+        <h2>Things to try</h2>
+        <ol>
+          <li>Open a different chat and send within 5 seconds.</li>
+          <li>Send anything in Product Team, which has 64 people.</li>
+          <li>In Weekend Trek, send “Hi Rahul, are you coming?”</li>
+          <li>Type something messy, then press <kbd id="hk">Alt W</kbd> or click Polish.</li>
+        </ol>
+      </div>
+    </aside>
+
+    <div id="main">
+      <header>
+        <div class="avatar" id="avatar"></div>
+        <div class="who">
+          <span dir="auto" id="chat-title" title=""></span>
+          <span class="sub" id="chat-sub" title=""></span>
+        </div>
+      </header>
+      <div class="messages" id="messages" aria-live="polite"></div>
+      <footer>
+        <div class="composer" contenteditable="true" role="textbox" aria-label="Type a message" data-placeholder="Type a message"></div>
+        <button class="send" aria-label="Send"><span data-icon="send"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6l-.1 6.5L15 12 3.3 13.9z" fill="currentColor"/></svg></span></button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="playground.js"></script>
+  <script src="content/woops.js"></script>
+</body>
+</html>
