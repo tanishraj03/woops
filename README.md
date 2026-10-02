@@ -37,9 +37,3 @@ This version has no key built in. Each person adds their own free key in setting
 
 If the guard stops showing up, open `content/woops.js` and update the `WA` selectors block near the top (chat title, member list, message box). Nothing else should need to change.
 
-## Before publishing
-
-- "Woops" is already used by another extension on the Chrome Web Store, so pick a distinct name.
-- In the store's privacy form, say that message text is sent to the AI provider the user picked (Gemini, Groq or OpenRouter) only when they press Polish.
-- Free tiers may use submitted text to improve their models. The settings page says so; keep that note.
-- Model names change often. They live in `MODEL_NAMES` in `background.js` and `PROVIDERS` in `panel/panel.js`.
